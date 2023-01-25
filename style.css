@@ -1,0 +1,124 @@
+:root {
+    --primary-darkblue: #262A3F;
+    --primary-grey: #E4E4E4;
+    --secondary-green: #85BBB1;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 44px;
+}
+h2 {
+    font-size: 40px;
+}
+button {
+    border: none;
+    background: none;
+}
+
+.btn:hover .svg__p1 {
+    fill: #E54F3A;
+}
+
+.btn:hover .svg__p2 {
+    fill: #E54F3A;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(4.5px);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 24px 0;
+    width: 1200px;
+    margin: 30px auto auto auto;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu__item {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #262A3F;
+    display: inline;
+}
+
+.menu__item:hover {
+    border-bottom: 3px solid #F1897B;
+
+}
+
+/* HERO */
+body {
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero__content {
+    padding-top: 150px;
+    max-width: 523px;
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+.title i {
+    font-style: italic;
+    color: var(--secondary-green);
+}
+
+.text {
+    margin: 20px 0 50px 0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 439px;
+    opacity: 0.8;
+}
+/* INFO */
+.info__left {
+    background-image: url(./assets/statistic-image.png);
+    height: 670px;
+    background-repeat: no-repeat;
+}
+/* BENEFITS */
+.items__row {
+    display: flex;
+}
+.item {
+    max-width: 570px;
+    max-height: 250px;
+    padding: 20px 35px;
+}
+.item__hr {
+    border: 1px solid var(--primary-grey);
+}
+
+/* QUOTE */
+/* VIDEO */
