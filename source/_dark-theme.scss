@@ -1,0 +1,97 @@
+@use 'variables' as v;
+
+body:has(#toggle:checked) {
+    background: v.$dark-bg url(../assets/bg-dark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    .menu__item,
+    .title,
+    .text {
+        color: #FFFFFF;
+    }
+
+    .menu__item:hover::after {
+        background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+        opacity: 0.3;
+    }
+
+    i {
+        color: v.$secondary-blue;
+    }
+
+    .btn {
+        color: v.$neon-btn;
+
+        &::after {
+            background-color: v.$neon-btn;
+        }
+
+        &:hover {
+            color: v.$neon-btn--hover;
+
+            &::after {
+                background-color: v.$neon-btn--hover;
+            }
+        }
+    }
+
+
+    .info__content {
+        background-color: v.$dark-bg;
+
+        .text-stats,
+        gray,
+        .info__item p {
+            color: #FFFFFF;
+        }
+    }
+
+    .quote__text::before {
+        content: url(../assets/quote-icon-dark.svg);
+        position: absolute;
+        top: -30px;
+        left: -55px;
+    }
+    .video__container{
+        border-color: rgba(81, 87, 115, 1);
+        &::before{
+            border-color: rgba(81, 87, 115, 1);
+        }
+        &::after{
+            border-color: rgba(81, 87, 115, 1);
+        }
+    }
+    .video__screensaver{
+        background-color: v.$dark-bg;
+        border-color: rgba(81, 87, 115, 1);
+    }
+    .video__btn {
+        cursor: pointer;
+        width: 120px;
+        height: 120px;
+        background: url(../assets/icon-play-dark.svg) 100% no-repeat;
+        z-index: 99;
+    }
+
+    .promises__content {
+        background-color: v.$dark-bg;
+
+        .text,
+        .medium-text {
+            color: #FFFFFF;
+        }
+
+        .promises__item:last-child:hover {
+            border-color: v.$neon-btn--hover;
+        }
+    }
+    .contacts__form input, .footer a, .footer p{
+        color: #FFFFFF;
+    }
+    .contacts,.benefits__item{
+        border-color: rgba(81, 87, 115, 1);
+    }
+}

@@ -13,32 +13,31 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    
-    <script defer src="./script.js" ></script>
+
+    <script defer src="./js/script.js"></script>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__content">
-            <div class="logo">
-                <img class="union" id="union" src="./assets/Union.svg" alt="Union">
-                <img class="solis" id="solis" src="./assets/Solis.svg" alt="Solis">
-                <!-- <img src="./assets/logo.svg" alt="logo" width="107px" height="32px"> -->
-            </div>
-            <nav class="menu">
-                <a class="menu__item" href="">Home</a>
-                <a class="menu__item" href="">About</a>
-                <a class="menu__item" href="">Products</a>
-                <a class="menu__item" href="">Use Cases</a>
-                <a class="menu__item" href="">Pricing</a>
-                <a class="menu__item" href="">Resources</a>
-            </nav>
+    <header class="header _container">
+        <div class="logo">
+            <input type="checkbox" id="toggle">
+            <img class="union" id="union" src="../assets/Union.svg" alt="Union">
+            <a href="/"><img class="solis" id="solis" src="../assets/Solis.svg" alt="Solis"></a>
         </div>
+        <nav class="menu">
+            <a class="menu__item" href="">Home</a>
+            <a class="menu__item" href="">About</a>
+            <a class="menu__item" href="">Products</a>
+            <a class="menu__item" href="">Use Cases</a>
+            <a class="menu__item" href="">Pricing</a>
+            <a class="menu__item" href="">Resources</a>
+        </nav>
     </header>
-    <main class="container">
+
+    <main class="_container">
         <section class="hero">
             <div class="hero__content">
                 <h1 class="title">A peer-to-peer stablecoin <i>clearinghouse</i> for the new economy</h1>
@@ -48,26 +47,26 @@
             </div>
         </section>
         <section class="info">
-            <div class="info__right">
+            <div class="info__content">
                 <ul class="info__list">
-                    <li class="list__item">
-                        <h2 class="list__header">
+                    <li class="info__item">
+                        <h2 class="text-stats">
                             <gray>$</gray>
                             1 tril
                         </h2>
                         <p class="text">Market cap potential</p>
                         <hr class="info__hr">
                     </li>
-                    <li class="list__item">
-                        <h2 class="list__header">
+                    <li class="info__item">
+                        <h2 class="text-stats">
                             <gray>$</gray>
                             3.65 mil
                         </h2>
                         <p class="text">Deposited to platform</p>
                         <hr class="info__hr">
                     </li>
-                    <li class="list__item">
-                        <h2 class="list__header">12</h2>
+                    <li class="info__item">
+                        <h2 class="text-stats">12</h2>
                         <p class="text">Stablecoins</p>
                     </li>
                 </ul>
@@ -88,52 +87,34 @@
             </div>
         </section>
         <section class="benefits">
-            <div class="items__row">
-                <div class="item">
-                    <hr class="item__hr">
-                    <div class="item__content">
-                        <h2 class="title">Qualified <i>traders</i> and liquidty <i>solutions</i></h2>
-                        <p class="text">Trade easily and efficiently between 12 stablecoins, including USDT, TrueUSD,
-                            Dai,
-                            Eurs and Gemini Dollar.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <hr class="item__hr">
-                    <div class="item__content">
-                        <h2 class="title">Settlement/OTC API and <i>integration</i></h2>
-                        <p class="text">Integrate OTC operations and settlements using our efficient API.</p>
-                    </div>
-                </div>
+            <div class="benefits__item">
+                <h2 class="title">Qualified <i>traders</i> and liquidty <i>solutions</i></h2>
+                <p class="text">Trade easily and efficiently between 12 stablecoins, including USDT, TrueUSD,
+                    Dai,
+                    Eurs and Gemini Dollar.</p>
             </div>
-            <div class="items__row">
-                <div class="item">
-                    <hr class="item__hr">
-                    <div class="item__content">
-                        <h2 class="title">The best <i>payments solutions</i> </h2>
-                        <p class="text">For all stablecoin payments, from point-of-sale transactions to website
-                            solutions.
-                            If you use stablecoins in your business, Stablehouse is for you.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <hr class="item__hr">
-                    <div class="item__content">
-                        <h2 class="title"> <i>Treasury</i> and <i>returns</i> for stablecoin stores</h2>
-                        <p class="text">Automate your stablecoin store with instant payments and on-the-fly conversion
-                            between different stablecoins.</p>
-                    </div>
-                </div>
+            <div class="benefits__item">
+                <h2 class="title">Settlement/OTC API and <i>integration</i></h2>
+                <p class="text">Integrate OTC operations and settlements using our efficient API.</p>
+            </div>
+            <div class="benefits__item">
+                <h2 class="title">The best <i>payments solutions</i> </h2>
+                <p class="text">For all stablecoin payments, from point-of-sale transactions to website
+                    solutions.
+                    If you use stablecoins in your business, Stablehouse is for you.</p>
+            </div>
+            <div class="benefits__item">
+                <h2 class="title"> <i>Treasury</i> and <i>returns</i> for stablecoin stores</h2>
+                <p class="text">Automate your stablecoin store with instant payments and on-the-fly conversion
+                    between different stablecoins.</p>
             </div>
         </section>
         <section class="quote">
-            <div class="quote__content">
-                <h4 class="quote__text">
-                    Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges
-                    certainty over access and liquidity
-                </h4>
-                <p class="quote__author">Lennon Burnett, Solis Group CEO</p>
-            </div>
+            <h4 class="quote__text">
+                Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges
+                certainty over access and liquidity
+            </h4>
+            <p class="author">Lennon Burnett, Solis Group CEO</p>
         </section>
         <section class="video">
             <div class="video__container">
@@ -142,8 +123,8 @@
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-                    <div class="video__screensaver"><button class="video__btn"></button>
-                    </div>
+                <div class="video__screensaver"><button class="video__btn"></button>
+                </div>
             </div>
             <div class="video__text">
                 <h2 class="title">A <i>powerful API</i> , easy to use user interface</h2>
@@ -154,14 +135,14 @@
         <section class="promises">
             <ul class="promises__content">
                 <li class="promises__item">
-                    <h6 class="promises__item-header">On-Exchange Trading</h6>
+                    <h6 class="medium-text">On-Exchange Trading</h6>
                     <p class="text">Instant
                         <br>
                         Passive Inventory earns fees
                     </p>
                 </li>
                 <li class="promises__item">
-                    <h6 class="promises__item-header">On-Chain Swaps</h6>
+                    <h6 class="medium-text">On-Chain Swaps</h6>
                     <p class="text">Low Counterparty risk
                         <br>
                         Direct transfers
@@ -169,7 +150,7 @@
                 </li>
 
                 <li class="promises__item">
-                    <h6 class="promises__item-header">Time Settlement Swaps</h6>
+                    <h6 class="medium-text">Time Settlement Swaps</h6>
                     <p class="text">LBTC / Lightning and other sidechain swaps
                     </p>
                 </li>
@@ -203,7 +184,6 @@
             </div>
         </section>
         <section class="contacts">
-            <hr class="long-hr">
             <div class="contacts__content">
                 <div class="contacts__text">
                     <h2 class="title">Contact <i>our sales team</i></h2>
@@ -214,27 +194,26 @@
                 </div>
                 <form class="contacts__form" id="myForm" method="get">
 
-                    <input class="input" type="text" name="name" id="name" placeholder="Your name">
+                    <input type="text" name="name" id="name" placeholder="Your name">
 
-                    <input class="input" type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email">
 
-                    <input class="input" type="text" name="more" id="more" placeholder="Tell more">
+                    <input type="text" name="more" id="more" placeholder="Tell more">
 
                     <button class="btn" form="myForm" type="submit">send&nbsp;request</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <hr class="long-hr">
-        <div class="footer__content">
-            <p class="footer__light">© 2020 Solisgroup. All Rights Reserved.</p>
-            <p class="footer__light">made by
-                <a class="footer__bold" href="/">Zgraya.digital</a></p>
-            <div class="footer__docs">
-                <a class="footer__bold" href="/">User Agreement</a>
-                <a class="footer__bold" href="/">Privacy Policy</a>
-            </div>    
+    <footer class="footer _container">
+        <p>© 2020 Solisgroup. All Rights Reserved.</p>
+        <div class="footer__creator">
+            <p>made by</p>
+            <a href="/">Zgraya.digital</a>
+        </div>
+        <div class="footer__agreements">
+            <a href="/">User Agreement</a>
+            <a href="/">Privacy Policy</a>
         </div>
     </footer>
 </body>
