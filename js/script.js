@@ -8,13 +8,3 @@ function showYoutube() {
     youtube.style.display='block'
     screensaver.style.display='none'
 }
-
-
-// //Change Theme
-// const logo = document.querySelector('#toggle')
-
-// logo.addEventListener('click',changeTheme)
-
-// function changeTheme(){
-    
-// }

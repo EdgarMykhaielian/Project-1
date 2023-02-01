@@ -1,6 +1,7 @@
 @use 'reset';
 @use 'dark-theme';
 @use 'variables' as v;
+@use 'switcher';
 
 // FONTS and BTN
 @mixin title-font($fs, $lh) {
@@ -103,7 +104,29 @@ body {
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(4.5px);
 
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        // color: v.$secondary-green;
+        color: slateGray;
+        ;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+    }
+
     #toggle {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    #themeSwitch {
         position: absolute;
         width: 32px;
         height: 32px;
@@ -313,7 +336,7 @@ body {
         cursor: pointer;
         width: 120px;
         height: 120px;
-        background: url(../assets/play.svg) 100% no-repeat;
+        background: url(../assets/icon-play.svg) 100% no-repeat;
         z-index: 99;
     }
 
@@ -458,20 +481,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    p{
+
+    p {
         @include text-font(300, 14px, 0.6);
     }
+
     a {
         @include text-font(400, 14px, 1);
         line-height: 24px;
         letter-spacing: 0.08em;
     }
-    .footer__creator{
+
+    .footer__creator {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
+
     .footer__agreements {
         display: flex;
         gap: 32px;

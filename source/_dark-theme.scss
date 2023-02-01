@@ -1,11 +1,19 @@
 @use 'variables' as v;
 
-body:has(#toggle:checked) {
+body:has(#themeSwitch:checked, #toggle:checked) {
     background: v.$dark-bg url(../assets/bg-dark.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+
+    .logo {
+        color: #FFFFFF;
+    }
+
+    .union {
+        fill: #FFFFFF;
+    }
 
     .menu__item,
     .title,
@@ -55,19 +63,24 @@ body:has(#toggle:checked) {
         top: -30px;
         left: -55px;
     }
-    .video__container{
+
+    .video__container {
         border-color: rgba(81, 87, 115, 1);
-        &::before{
+
+        &::before {
             border-color: rgba(81, 87, 115, 1);
         }
-        &::after{
+
+        &::after {
             border-color: rgba(81, 87, 115, 1);
         }
     }
-    .video__screensaver{
+
+    .video__screensaver {
         background-color: v.$dark-bg;
         border-color: rgba(81, 87, 115, 1);
     }
+
     .video__btn {
         cursor: pointer;
         width: 120px;
@@ -88,10 +101,15 @@ body:has(#toggle:checked) {
             border-color: v.$neon-btn--hover;
         }
     }
-    .contacts__form input, .footer a, .footer p{
+
+    .contacts__form input,
+    .footer a,
+    .footer p {
         color: #FFFFFF;
     }
-    .contacts,.benefits__item{
+
+    .contacts,
+    .benefits__item {
         border-color: rgba(81, 87, 115, 1);
     }
 }
