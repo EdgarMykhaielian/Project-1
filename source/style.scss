@@ -3,6 +3,7 @@
 @use 'variables' as v;
 @use 'switcher';
 
+
 // FONTS and BTN
 @mixin title-font($fs, $lh) {
     font-family: 'Playfair Display', sans-serif;
@@ -78,7 +79,9 @@
         }
     }
 }
-
+.hamburger{
+    display: none;
+}
 // BODY
 body {
     background-image: url(../assets/bg.png);
@@ -111,8 +114,8 @@ body {
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         font-weight: 700;
-        // color: v.$secondary-green;
-        color: slateGray;
+        color: v.$primary-darkblue;
+        // color: slateGray;
         ;
         text-transform: uppercase;
         letter-spacing: 0.15em;
@@ -231,7 +234,7 @@ body {
     .benefits__item {
         display: flex;
         flex-direction: column;
-        width: 570px;
+        max-width: 570px;
         position: relative;
         padding: 50px 35px;
         border-top: 1px solid v.$primary-grey;
@@ -342,7 +345,7 @@ body {
 
     .video__text {
         margin: 50px auto;
-        width: 970px;
+        width: 80%;
     }
 
     .video__text p {
@@ -504,3 +507,9 @@ body {
         gap: 32px;
     }
 }
+
+html {
+    scroll-behavior: smooth
+}
+
+@import 'adaptive';

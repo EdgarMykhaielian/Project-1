@@ -112,4 +112,23 @@ body:has(#themeSwitch:checked, #toggle:checked) {
     .benefits__item {
         border-color: rgba(81, 87, 115, 1);
     }
+
+
+    @media (width < 768px) {
+        ._container {
+            .menu {
+                background: url(../assets/bg-dark.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100vh;
+            }
+
+            .menu.active {
+                .menu__item {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
 }

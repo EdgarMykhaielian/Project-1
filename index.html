@@ -24,12 +24,12 @@
     <header class="header _container">
         <div class="logo">
             <input type="checkbox" id="toggle">
-            <!-- <img class="union" id="union" src="./assets/Union.svg" alt="Union"> -->
+
             <svg class="union" id="union" width="33" height="32" viewBox="0 0 33 32" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="union" fill-rule="evenodd" clip-rule="evenodd"
                     d="M21.0937 4.75L23.5201 7.17431L30.7006 0H25.7852L21.0937 4.75ZM32.0274 8.11181L28.6001 4.75L32.0274 1.32568V8.11181ZM6.07855 19.7489L12.2572 13.5755L14.6832 15.9994L8.50457 22.1728L6.07855 19.7489ZM21.0898 19.7505L27.2684 13.5771L29.6944 16.0011L23.5158 22.1745L21.0898 19.7505ZM16.0097 17.326L13.5837 19.7499L19.7624 25.9233L22.1884 23.4994L16.0097 17.326ZM12.2605 21.0757L18.4401 27.25L16.0137 29.7368L9.83409 23.5L12.2605 21.0757ZM31.0891 17.3257L32.0274 18.2632V23.1118L28.6001 19.75L31.0891 17.3257ZM2.32615 15.9989L8.50483 9.8255L10.9308 12.2494L4.75218 18.4228L2.32615 15.9989ZM23.516 9.82713L17.3374 16.0005L19.7634 18.4245L25.9421 12.2511L23.516 9.82713ZM27.2733 6.07568L32.0274 10.7632V15.6118L24.8469 8.5L27.2733 6.07568ZM13.5873 4.75L19.7669 10.9243L22.1933 8.5L16.0137 2.26318L13.5873 4.75ZM12.2582 6.07672L9.83214 8.50067L16.0108 14.6741L18.4368 12.2501L12.2582 6.07672ZM25.9465 27.25L23.5201 24.8257L16.4022 32H21.255L25.9465 27.25ZM12.2605 28.5757L14.6869 31.0625L13.7486 32H8.89579L12.2605 28.5757ZM10.9337 27.25L8.50728 24.8257L1.32683 32H6.24215L10.9337 27.25ZM24.8469 23.5L27.2733 21.0757L32.0274 25.7632V30.6743L24.8469 23.5ZM0 23.8882V30.6743L3.42724 27.25L0 23.8882ZM23.9086 32L27.2733 28.5757L30.7006 32H23.9086ZM17.3405 0.9375L19.7669 3.42431L23.1316 0H18.2788L17.3405 0.9375ZM8.11876 0L4.75407 3.42431L1.32683 0H8.11876ZM4.75406 25.9243L7.18045 23.5L0 16.3882V21.2368L4.75406 25.9243ZM8.50727 7.17431L6.08088 4.75L10.7724 0H15.6252L8.50727 7.17431ZM4.75406 10.9243L7.18045 8.5L0 1.32568V6.23681L4.75406 10.9243ZM3.42724 12.25L0.938302 14.6743L0 13.7368V8.88818L3.42724 12.25Z"
-                    fill="slateGray" />
+                    fill="#262A3F" />
             </svg>
 
             <a href="/">
@@ -37,13 +37,18 @@
             </a>
         </div>
         <nav class="menu">
-            <a class="menu__item" href="">Home</a>
-            <a class="menu__item" href="">About</a>
-            <a class="menu__item" href="">Products</a>
-            <a class="menu__item" href="">Use Cases</a>
-            <a class="menu__item" href="">Pricing</a>
-            <a class="menu__item" href="">Resources</a>
+            <a class="menu__item" href="./">Home</a>
+            <a class="menu__item" href="#info">About</a>
+            <a class="menu__item" href="#benefits">Products</a>
+            <a class="menu__item" href="#reviews">Use Cases</a>
+            <a class="menu__item" href="#promises">Pricing</a>
+            <a class="menu__item" href="#contacts">Resources</a>
         </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <div class="toggleWrapper">
             <input type="checkbox" id="themeSwitch" name="theme-switch" class="theme-switch__input" />
             <label for="themeSwitch" class="theme-switch__label">
@@ -61,7 +66,7 @@
                 <button class="btn">join&nbsp;now</button>
             </div>
         </section>
-        <section class="info">
+        <section class="info" id="info">
             <div class="info__content">
                 <ul class="info__list">
                     <li class="info__item">
@@ -101,7 +106,7 @@
                 </div>
             </div>
         </section>
-        <section class="benefits">
+        <section class="benefits" id="benefits">
             <div class="benefits__item">
                 <h2 class="title">Qualified <i>traders</i> and liquidty <i>solutions</i></h2>
                 <p class="text">Trade easily and efficiently between 12 stablecoins, including USDT, TrueUSD,
@@ -124,14 +129,14 @@
                     between different stablecoins.</p>
             </div>
         </section>
-        <section class="quote">
+        <section class="quote" id="quote">
             <h4 class="quote__text">
                 Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges
                 certainty over access and liquidity
             </h4>
             <p class="author">Lennon Burnett, Solis Group CEO</p>
         </section>
-        <section class="video">
+        <section class="video" id="video">
             <div class="video__container">
                 <iframe class="video__youtube" width="100%" height="100%"
                     src="https://www.youtube.com/embed/vnbN9V_2Guk?rel=0&controls=1&amp&showinfo=0&modestbranding=0"
@@ -147,7 +152,7 @@
                     transfers to deposits, withdrawals, creation and redemption and reporting.</p>
             </div>
         </section>
-        <section class="promises">
+        <section class="promises" id="promises">
             <ul class="promises__content">
                 <li class="promises__item">
                     <h6 class="medium-text">On-Exchange Trading</h6>
@@ -172,7 +177,7 @@
                 <li class="promises__item"><button class="btn">join&nbsp;now</button></li>
             </ul>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <h2 class="title">Client <i>reviews</i></h2>
             <p class="text">Happy clients, happy us. Read our client reviews about the work process and results.</p>
             <div class="reviews__gallery">
@@ -198,7 +203,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts__content">
                 <div class="contacts__text">
                     <h2 class="title">Contact <i>our sales team</i></h2>
