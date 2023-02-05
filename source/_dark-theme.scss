@@ -114,7 +114,7 @@ body:has(#themeSwitch:checked, #toggle:checked) {
     }
 
 
-    @media (width < 768px) {
+    @media screen and (max-width:768px) {
         ._container {
             .menu {
                 background: url(../assets/bg-dark.png);

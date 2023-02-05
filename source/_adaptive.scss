@@ -1,8 +1,13 @@
-@media (width < 1200px) {
+@media screen and (min-width:1201px) {
+    ._container {
+        padding: 0 calc((100% - 1170px) / 2);
+    }
+}
+
+@media screen and (max-width:1200px) {
     ._container {
         padding: 0 calc((100% - 1000px) / 2);
 
-        //INFO
         .info {
             height: 570px;
 
@@ -10,20 +15,7 @@
                 padding: 0 30px;
                 gap: 25px;
 
-                & h2 {
-                    font-size: 50px;
-                    line-height: 53px;
-                }
             }
-        }
-
-        .benefits__item h2,
-        .video__text h2,
-        .reviews h2,
-        .contacts__text h2,
-        .quote h4 {
-            font-size: 30px;
-            line-height: 36px;
         }
 
         .benefits__item {
@@ -39,22 +31,108 @@
             gap: 0;
         }
 
+        .reviews__slide {
+            padding: 20px 20px;
+        }
+
+        //FONTS
+        .info .info__list h2 {
+            font-size: 50px;
+            line-height: 53px;
+        }
+
+        .benefits__item h2,
+        .video__text h2,
+        .reviews h2,
+        .contacts__text h2,
+        .quote h4 {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
         .promises__item h6 {
             font-size: 22px;
             line-height: 30px;
         }
-
-        .reviews__slide {
-            padding: 20px 20px;
-        }
     }
 }
 
-@media (width < 1030px) {
+@media screen and (max-width:1030px) {
     ._container {
         padding: 0 calc((100% - 800px) / 2);
 
         .info {
+            .info__list {
+                padding: 0 10px;
+                gap: 0px;
+            }
+        }
+
+        .benefits__item {
+            max-width: 47%;
+        }
+
+        .video {
+            & .video__container {
+                width: 100%;
+                height: 500px;
+            }
+        }
+
+        .promises {
+            padding: 45px 0 45px 260px;
+
+            .promises__content {
+                padding: 10% 10%;
+                gap: 0;
+            }
+        }
+
+        .reviews {
+            & .reviews__gallery {
+                flex-wrap: wrap;
+            }
+        }
+
+        .quote {
+            padding: 10% 10%;
+        }
+
+        //FONTS
+        .info .info__text p {
+            font-size: 16px;
+            line-height: 23px;
+        }
+
+        .info .info__list {
+            &h2 {
+                font-size: 40px;
+                line-height: 42px;
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 23px;
+                margin: 10px auto 30px auto;
+            }
+        }
+
+        .promises .promises__content .promises__item h6 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+    }
+}
+
+@media screen and (max-width:860px) {
+
+    ._container {
+        padding: 0 calc((100% - 748px) / 2);
+
+        .info {
+            height: 570px;
+
             .info__list {
                 padding: 0 10px;
                 gap: 0px;
@@ -83,30 +161,6 @@
 
         .video {
             & .video__container {
-                width: 100%;
-                height: 500px;
-            }
-        }
-
-        .promises {
-            padding: 45px 0 45px 260px;
-        }
-
-        .reviews {
-            & .reviews__gallery {
-                flex-wrap: wrap;
-            }
-        }
-    }
-}
-
-@media (width < 860px) {
-
-    ._container {
-        padding: 0 calc((100% - 748px) / 2);
-
-        .video {
-            & .video__container {
                 width: 99%;
                 height: 480px;
             }
@@ -118,6 +172,8 @@
 
         .quote {
             height: 340px;
+            padding: 10% 10%;
+
         }
 
         .quote h4 {
@@ -126,11 +182,29 @@
         }
 
         .promises {
+            padding: 45px 0 45px 260px;
+
+            .promises__content {
+                padding: 10% 10%;
+                gap: 0;
+            }
+
+            .promises__item h6 {
+                font-size: 22px;
+                line-height: 30px;
+            }
+
             padding-left: 200px;
         }
 
         .reviews>p {
             max-width: 65%;
+        }
+
+        .reviews {
+            & .reviews__gallery {
+                flex-wrap: wrap;
+            }
         }
 
         .reviews .reviews__gallery {
@@ -160,15 +234,22 @@
 
 // Mobile
 
-@media (width< 768px) {
+@media screen and (max-width:768px) {
     .header {
-        position: fixed;
+        // position: fixed;
         width: 100%;
         z-index: 1;
     }
 
     ._container {
         padding: 0 20px;
+
+        .hero {
+            .hero__content h1 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
 
         .toggleWrapper {
             display: none;
@@ -208,11 +289,23 @@
         }
 
         .menu {
+            .menu__item:first-child {
+                padding-top: 40px;
+            }
+
+            .menu__item {
+                padding: 20px;
+                font-size: 16px;
+            }
+
             position: fixed;
             left: -100%;
-            top: 5rem;
+            top: 8rem;
+
             flex-direction: column;
-            justify-content: space-around;
+
+            // justify-content: space-around;
+            gap: 10px;
             background-image: url(../assets/bg.png);
             background-size: cover;
             background-repeat: no-repeat;
@@ -244,13 +337,13 @@
             left: 0;
             height: 100vh;
         }
-    }
-}
 
-@media (width< 767px) {
-    ._container {
         .info {
             padding-left: 10%;
+
+            .info__list {
+                justify-content: space-around;
+            }
 
             .info__text p {
                 font-size: 14px;
@@ -259,21 +352,49 @@
             }
         }
 
-        .quote h4 {
-            font-size: 18px;
-            line-height: 24px;
+        .benefits {
+            flex-wrap: wrap;
         }
+
+        .benefits__item {
+            max-width: 100%;
+        }
+
+        .quote {
+            height: 280px;
+
+            h4 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .author {
+                font-size: 14px;
+            }
+        }
+
+        .video .video__container {
+            height: 390px;
+        }
+
+        .promises {
+            padding-left: 100px;
+        }
+
+    }
+
+    .footer {
+        height: 200px;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
-@media (width< 550px) {
+
+@media screen and (max-width:550px) {
     ._container {
-        .hero {
-            .hero__content h1 {
-                font-size: 30px;
-                line-height: 38px;
-            }
-        }
 
         .info {
             margin-top: 75px;
@@ -292,14 +413,6 @@
             }
         }
 
-        .benefits {
-            flex-wrap: wrap;
-        }
-
-        .benefits__item {
-            max-width: 100%;
-        }
-
         .quote {
             .quote__text::before {
                 left: -30px;
@@ -311,6 +424,14 @@
                 height: 300px;
                 padding: 0;
                 border: none;
+
+                &::before {
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 0;
+                }
             }
 
             .video__text p {
@@ -323,7 +444,7 @@
 
             .promises__content {
                 flex-wrap: wrap;
-                gap: unset;
+                gap: 25px;
 
                 .promises__item {
                     width: 100%;
@@ -350,9 +471,5 @@
 
     }
 
-    .footer {
-        height: 200px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+
 }
