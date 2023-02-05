@@ -78,7 +78,7 @@
         }
 
         .benefits__item {
-            max-width: 357px;
+            max-width: 47%;
         }
 
         .video {
@@ -100,7 +100,6 @@
     }
 }
 
-// 860-768
 @media (width < 860px) {
 
     ._container {
@@ -159,7 +158,9 @@
 
 }
 
-@media (width < 768px) {
+// Mobile
+
+@media (width< 768px) {
     .header {
         position: fixed;
         width: 100%;
@@ -227,7 +228,6 @@
         }
 
         .menu.active {
-
             .menu__item {
                 text-transform: uppercase;
                 color: v.$primary-darkblue;
@@ -244,5 +244,115 @@
             left: 0;
             height: 100vh;
         }
+    }
+}
+
+@media (width< 767px) {
+    ._container {
+        .info {
+            padding-left: 10%;
+
+            .info__text p {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .quote h4 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (width< 550px) {
+    ._container {
+        .hero {
+            .hero__content h1 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+
+        .info {
+            margin-top: 75px;
+            padding: 0;
+            height: 750px;
+            background-position: bottom;
+
+            .info__content {
+                flex-wrap: wrap;
+                gap: unset;
+                justify-content: center;
+
+                .info__text p {
+                    padding: 5%;
+                }
+            }
+        }
+
+        .benefits {
+            flex-wrap: wrap;
+        }
+
+        .benefits__item {
+            max-width: 100%;
+        }
+
+        .quote {
+            .quote__text::before {
+                left: -30px;
+            }
+        }
+
+        .video {
+            .video__container {
+                height: 300px;
+                padding: 0;
+                border: none;
+            }
+
+            .video__text p {
+                max-width: 100%;
+            }
+        }
+
+        .promises {
+            padding: 0;
+
+            .promises__content {
+                flex-wrap: wrap;
+                gap: unset;
+
+                .promises__item {
+                    width: 100%;
+                }
+            }
+        }
+
+        .reviews>p {
+            max-width: 100%;
+        }
+
+        .contacts__content {
+            flex-wrap: wrap;
+
+            .contacts__text {
+                max-width: 100%;
+            }
+
+            .contacts__form {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+
+    }
+
+    .footer {
+        height: 200px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

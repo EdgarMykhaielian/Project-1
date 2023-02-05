@@ -1271,7 +1271,7 @@ html {
     line-height: 23px;
   }
   ._container .benefits__item {
-    max-width: 357px;
+    max-width: 47%;
   }
   ._container .video .video__container {
     width: 100%;
@@ -1401,5 +1401,93 @@ html {
   }
   ._container .menu.active .menu__item:hover {
     font-weight: 600;
+  }
+}
+@media (width < 767px) {
+  ._container .info {
+    padding-left: 10%;
+  }
+  ._container .info .info__text p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  ._container .quote h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (width < 550px) {
+  ._container .hero .hero__content h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  ._container .info {
+    margin-top: 75px;
+    padding: 0;
+    height: 750px;
+    background-position: bottom;
+  }
+  ._container .info .info__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  ._container .info .info__content .info__text p {
+    padding: 5%;
+  }
+  ._container .benefits {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  ._container .benefits__item {
+    max-width: 100%;
+  }
+  ._container .quote .quote__text::before {
+    left: -30px;
+  }
+  ._container .video .video__container {
+    height: 300px;
+    padding: 0;
+    border: none;
+  }
+  ._container .video .video__text p {
+    max-width: 100%;
+  }
+  ._container .promises {
+    padding: 0;
+  }
+  ._container .promises .promises__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: unset;
+  }
+  ._container .promises .promises__content .promises__item {
+    width: 100%;
+  }
+  ._container .reviews > p {
+    max-width: 100%;
+  }
+  ._container .contacts__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  ._container .contacts__content .contacts__text {
+    max-width: 100%;
+  }
+  ._container .contacts__content .contacts__form {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .footer {
+    height: 200px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
