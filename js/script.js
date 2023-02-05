@@ -14,6 +14,7 @@ function showYoutube() {
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const hero = document.querySelector(".hero__content")
+const body = document.body
 
 hamburger.addEventListener("click", burgerMenu);
 
@@ -21,6 +22,7 @@ function burgerMenu() {
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");
     hero.classList.toggle("hidden")
+    body.classList.toggle("hidden")
 }
 
 // hamburger menu - close when we click a link.
@@ -32,4 +34,5 @@ function closeMenu() {
     hamburger.classList.remove("active");
     menu.classList.remove("active");
     hero.classList.toggle("hidden")
+    body.classList.toggle("hidden")
 }

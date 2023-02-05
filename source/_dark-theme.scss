@@ -118,6 +118,8 @@ body:has(#themeSwitch:checked, #toggle:checked) {
         ._container {
             .menu {
                 background: url(../assets/bg-dark.png);
+                // background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02), url(../assets/bg-dark.png);
+                // backdrop-filter: blur(15px);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
